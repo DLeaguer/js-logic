@@ -40,14 +40,17 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
 
 function canVote(age){
 	if (age >= 18) {
-		return "you are able to vote";
+		return "1. you are able to vote";
 	}else{
-		return "try again next year";
+		return "1. try again next year";
 	}
 }
 
 var voter = canVote(21);
 console.log(voter);
+var voto = canVote(17);
+console.log(voto);
+
 
 /*
  * #2
@@ -63,9 +66,9 @@ console.log(voter);
 
 function login(password){
 	if (password === "test1234"){
-		return "Login Success!";
+		return "2. Login Success!";
 	}else{
-		return "Try again";
+		return "2. Try again";
 	}
 }
 
@@ -87,9 +90,9 @@ console.log(signIn);
 
 function isGreaterThan(first, second){
 	if (first > second) {
-		return true;
+		return "3. " + true;
 	}else{
-		return false;
+		return "3. " + false;
 	}
 }
 
@@ -110,14 +113,16 @@ console.log(igt);
 
 function mustBeTrue(boo){
 	if (boo === true) {
-		return true;
+		return "4. " + true;
 	}else{
-		return false;
+		return "4. " + false;
 	}
 }
 
 var mbt = mustBeTrue(5 > 2);
 console.log(mbt);
+var mustB = mustBeTrue("boo");
+console.log(mustB);
 
 /*
  * #5
@@ -133,14 +138,17 @@ console.log(mbt);
 
 function bigBird(word){
 	if (word.length === 3) {
-		return "Word to Big Bird!";
+		return "5. Word to Big Bird!";
 	}else{
-		return "Try again";
+		return "5. Try again";
 	}
 }
 
 var threeWord = bigBird("get");
 console.log(threeWord);
+var fourWord = bigBird("four");
+console.log(fourWord);
+
 /*
  * #6
  * Function - isEqual
@@ -156,9 +164,9 @@ console.log(threeWord);
 
 function isEqual(first, second){
 	if (first === second) {
-		return "You look mahvelous";
+		return "6. You look mahvelous";
 	}else{
-		return "I don't know who you are anymore.";
+		return "6. I don't know who you are anymore.";
 	}
 }
 
@@ -180,9 +188,9 @@ console.log(ie);
 
 function notEqual(first, second){
 	if (first !== second) {
-		return "Opposites do attract";
+		return "7. Opposites do attract";
 	}else{
-		return "Cause it's like you're my mirror.";
+		return "7. Cause it's like you're my mirror.";
 	}
 }
 
@@ -203,14 +211,16 @@ console.log(ne);
 
 function spareChange(money){
 	if (money > 100) {
-		return true;
+		return "8. " + true + " extra " + (money - 100);
 	}else{
-		return false;
+		return "8. " + false + " less " + (money - 100);
 	}
 }
 
-var sc =  spareChange(200);
+var sc =  spareChange(220);
 console.log(sc);
+var spareC = spareChange(60);
+console.log(spareC);
 
 /*
  * #9
@@ -227,15 +237,18 @@ console.log(sc);
 */ 
 
 function dirty30(one, two, three){
-	if (one + two + three > 30) {
-		return true;
+	var sum = one + two + three;
+	if (sum > 30) {
+		return "9. " + true + sum;
 	}else{
-		return false;
+		return "9. " + false + sum;
 	}
 }
 
 var d3 =  dirty30(10, 11, 12);
 console.log(d3);
+var d30 = dirty30(9, 9, 9);
+console.log(d30);
 
 /*
  * #10
@@ -251,14 +264,16 @@ console.log(d3);
 
 function evenStevens(num){
 	if (num % 2 === 0) {
-		return true;
+		return "10. even " + num;
 	}else{
-		return false;
+		return "10. not even " + num;
 	}
 }
 
-var es = evenStevens(2);
+var es = evenStevens(18);
 console.log(es);
+var evens = evenStevens(19);
+console.log(evens);
 
 
 /*
@@ -276,9 +291,9 @@ console.log(es);
 
 function daClub(cover, age){
 	if (cover >= 21 && age >= 21) {
-		return "Welcome to the Legends Lounge.";
+		return "11. Welcome to the Legends Lounge.";
 	}else{
-		return "Chuck E Cheese is across the street.";
+		return "11. Chuck E Cheese is across the street.";
 	}
 }
 
@@ -300,9 +315,9 @@ console.log(dc);
 
 function graduation(credit, thesis){
 	if (credit >= 120 || thesis >= 120) {
-		return "Congratulations on a job well done.";
+		return "12. Congratulations on a job well done.";
 	}else{
-		return "See you in summer school.";
+		return "12. See you in summer school.";
 	}
 }
 
@@ -323,9 +338,9 @@ console.log(grad);
 
 function moneyTrain(speed){
 	if (speed < 50) {
-		return "You are riding Honolulu's Rail.";
+		return "13. You are riding Honolulu's Rail.";
 	}else{
-		return "You are riding an Amtrak.";
+		return "13. You are riding an Amtrak.";
 	}
 }
 
@@ -347,10 +362,13 @@ console.log(speeder);
 */ 
 
 var budget = 21;
-var doughnutPrice = 2;
+var doughnutPrice = 5;
 var doughnutBought = 0;
 //var newBudget = budget-=doughnutPrice; need to be inside function
 //var doughnutCount = doughnutBought++; need to be inside function
+
+//var spent = budget -= doughnutPrice;
+//var bought = doughnutBought ++;
 
 
 function buyDoughnut(){
@@ -360,7 +378,9 @@ function buyDoughnut(){
 	//var doughnutCount = doughnutBought++;
 	if (budget >= doughnutPrice) {
 		spent;
+//		console.log("spent " + spent);
 		bought;
+//		console.log("bought " + bought);
 		//newBudget;
 		//doughnutCount;
 		//budget -= doughnutPrice;
@@ -368,17 +388,43 @@ function buyDoughnut(){
 
 	}
 }
+
+
+/*
+function buyDoughnut(){
+	if (budget >= doughnutPrice) {
+		budget -= doughnutPrice;
+		doughnutBought++;
+	}
+}
+*/
+
 //var newBudget = budget-=doughnutPrice; need to be inside function
 //var doughnutCount = doughnutBought++; need to be inside function
-var bd = buyDoughnut();
-console.log(bd);
-console.log(budget);
-console.log(doughnutBought);
 
 buyDoughnut();
-console.log(budget);
-console.log(doughnutBought);
+//var bd = buyDoughnut();
+//console.log(bd);
+console.log("14. budget " + budget);
+console.log("14. doughnutBought " + doughnutBought);
+//console.log("spent ", + spent);
+//console.log("bought ", + bought);
 
+buyDoughnut();
+console.log("14. budget " + budget);
+console.log("14. doughnutBought " + doughnutBought);
+
+buyDoughnut();
+console.log("14. budget " + budget);
+console.log("14. doughnutBought " + doughnutBought);
+
+buyDoughnut();
+console.log("14. budget " + budget);
+console.log("14. doughnutBought " + doughnutBought);
+
+buyDoughnut();
+console.log("14. budget " + budget);
+console.log("14. doughnutBought " + doughnutBought);
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
@@ -473,7 +519,7 @@ for (var i = 0; i<toyotaModels.length; i++){
 var players = ["Player: 1", "Player: 2", "Player: 3", "Player: 4", "Player: 5"];
 
 for (var i = 0; i < players.length; i++) {
-	console.log(players[i]);
+	console.log("15. " + players[i]);
 }
 
 /* 
@@ -483,7 +529,7 @@ for (var i = 0; i < players.length; i++) {
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
 for (i = 0; i < myFavFoods.length; i++) {
-	console.log(myFavFoods[i]);
+	console.log("16. " + myFavFoods[i]);
 }
 
 /*
@@ -516,7 +562,7 @@ function sumItUp(arr) {
 		//console.log(total += numArray[i]); //works but shows all sum steps of array each time it passes through
 		(total += numArray[i]); //works but undefined without return, return needed
 		//console.log(sumItUp(arr)); broken
-	}return total; //if no return, then return is undefined
+	}return "17. " + total; //if no return, then return is undefined
 }
 
 //var numArray = [1, 2, 3, 4, 5];
@@ -541,19 +587,65 @@ console.log(sumItUp(numArray)); //works
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+
+function allStars(ballers){
+	for (var i = 0; i < ballers.length; i++) {
+		console.log(ballers[i]);		
+		}
+		if (ballers[i] % 2 === 0){
+		//var east = ballers[i] % 2 !== 0;
+		console.log(ballers[i].push(ballers[i]));
+		//console.log(east);
+		}else if (ballers[i] % 2 !== 0){
+		//var west = ballers[i] % 2 === 0;
+		console.log(ballers[i].push(ballers[i]));		
+		//console.log(west);
+		}
+
+//	if (ballers[i] % 2 !== 0) {
+//		return "east - " + ballers[i];
+//	}else if (ballers[i] % 2 === 0){
+//		return "west - " + ballers[i];
+//	}
+}
+allStars(players);
+//var pros = allStars(players);
+//console.log(pros);
+console.log(east);
+console.log(west);
+
+//for (i = 0; i < players.length; i++){
+	//players[i] % 2 === 0;
+	//console.log(players[i]);
+//	return "east - " + [players[i]];
+//	console.log(players[i]);
+//}
+//for (i = 0; i < players.length; i++){
+	//players[i] % 2 !== 0;
+//	console.log(players[i]);
+//	return "west - " + [players[i]];
+//}
+
+//console.log(players);
 //var east = players.indexOf() % 2 !== 0;
 //var west = players.indexOf() % 2 === 0;
-function allStars(ballers) {
+//console.log(east);
+//console.log(west);
+
+//function allStars(ballers) {
 	
-	for (i=0; i<ballers.length; i++){
-		console.log(ballers[i]);
-		if (/*var east = ballers[i].indexOf()*/i % 2 === 0){
-			return "east -" + ballers[i].push/*[i]*/;
-		}else if (/*var west = ballers[i].indexOf()*/ i % 2 !== 0){
-			return "west -" + ballers[i].push/*[i]*/;
-		}else{
-			return "no more players";
-		}
+//	for (i=0; i<ballers.length; i++){
+		//console.log(ballers[i]);
+		//ballers[i].indexOf(/*[i]*/)%2===0;
+		//console.log(ballers[i].push);
+		
+		//if (/*var east = ballers[i].indexOf()*/i % 2 === 0){
+		//	return "east -" + ballers/*[i]*/.push[i];
+		//}else if (/*var west = ballers[i].indexOf()*/ i % 2 !== 0){
+		//	return "west -" + ballers/*[i]*/.push[i];
+		//}else{
+		//	return "no more players";
+		//}
 		//}
 		//if (players.indexOf() % 2 !== 0) {
 		//	return "east - " + players;
@@ -568,12 +660,14 @@ function allStars(ballers) {
 		//console.log(west[i]);
 		//console.log(players[i]);
 		//console.log(players[i]);
-	}
+//	}
 	//return ;
-}
+//}
  
-console.log(allStars(players));
 //console.log(allStars(players));
+//console.log(east);
+//console.log(west);
+
 
 /*
  * #19
