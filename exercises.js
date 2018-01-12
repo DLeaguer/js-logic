@@ -264,9 +264,9 @@ console.log(d30);
 
 function evenStevens(num){
 	if (num % 2 === 0) {
-		return "10. even " + num;
+		return "10. " + true;//num;
 	}else{
-		return "10. not even " + num;
+		return "10. " + false;//num;
 	}
 }
 
@@ -372,11 +372,11 @@ var doughnutBought = 0;
 
 
 function buyDoughnut(){
-	var spent = budget -= doughnutPrice;
-	var bought = doughnutBought ++;
 	//var newBudget = budget-=doughnutPrice;
 	//var doughnutCount = doughnutBought++;
 	if (budget >= doughnutPrice) {
+		var spent = budget -= doughnutPrice;
+		var bought = ++doughnutBought;
 		spent;
 //		console.log("spent " + spent);
 		bought;
@@ -386,9 +386,21 @@ function buyDoughnut(){
 		//budget -= doughnutPrice;
 		//doughnutBought++;
 
+	}else{
+		console.log("you are broke");
 	}
 }
 
+
+//Jamie's code
+//function buyDoughnut(){
+//if (budget >= doughnutPrice){
+//return budget -+ doughnutPrice, ++doughnutBought;
+//}else{
+//	return "you're broke";
+//}
+//}
+//}//++ before doughnutBought and not after in return statement
 
 /*
 function buyDoughnut(){
@@ -432,18 +444,46 @@ Inside the function, create a switch statement that will check the daily special
 
 function dailySpecials(special) {
 	switch (special) {
-		case 0: return "Sunday - Spaghetti & Garlic Bread";
-		case 1: return "Monday - Beef Stew";
-        case 2: return "Tuesday - Beef Curry";
-        case 3: return "Wednesday - Loco Moco";
-        case 4: return "Thursday - Teriyaki Steak";
-        case 5: return "Friday - Hawaiian Plate";
-        case 6: return "Saturday - Mahi Mahi";
+		case "Sunday": return "Sunday - Spaghetti & Garlic Bread";
+		case "Monday": return "Monday - Beef Stew";
+        case "Tuesday": return "Tuesday - Beef Curry";
+        case "Wednesday": return "Wednesday - Loco Moco";
+        case "Thursday": return "Thursday - Teriyaki Steak";
+        case "Friday": return "Friday - Hawaiian Plate";
+        case "Saturday": return "Saturday - Mahi Mahi";
         default: return "Specials 0 - 6 Sunday - Saturday";
     }
 }
-var special = dailySpecials(3);
+var special = dailySpecials("Tuesday");
 console.log("The Special for " + special);
+
+/*function dailySpecials(special){	
+	//var day //= special;
+	switch (special) {
+    	case "Sunday":
+        	day = "Sunday - Spaghetti & Garlic Bread";
+        	break;
+    	case 1:
+        	day = "Monday - Beef Stew";
+        	break;
+    	case 2:
+        	day = "Tuesday - Beef Curry";
+        	break;
+    	case 3:
+        	day = "Wednesday - Loco Moco";
+        	break;
+    	case 4:
+        	day = "Thursday - Teriyaki Steak";
+        	break;
+    	case 5:
+        	day = "Friday - Hawaiian Plate";
+        	break;
+    	case 6:
+        	day = "Saturday - Mahi Mahi";
+	}
+}*/
+
+
 
 /*function dailySpecials(day){	
 	//var day //= special;
@@ -531,6 +571,7 @@ for (var i = 0; i < players.length; i++) {
 for (i = 0; i < myFavFoods.length; i++) {
 	console.log("16. " + myFavFoods[i]);
 }
+console.log(myFavFoods + "");
 
 /*
  * #17
