@@ -40,6 +40,11 @@ console.log("1. 19 canVote: " + canVote(19));
 console.log("1. 16 canVote: " + canVote(16));
 
 /*
+1. 19 canVote: true
+1. 16 canVote: false
+*/
+
+/*
  * #2
  * Function - login
  * Create a function named `login` which will take a parameter: `password`.
@@ -59,6 +64,11 @@ function login(password){
 }
 console.log('2. login: ' + login('test1234'));
 console.log('2. login: ' + login("test124"));
+
+/*
+2. login: Login Success!
+2. login: Try again
+*/
 
 /*
  * #3
@@ -83,6 +93,10 @@ function isGreaterThan(first, second){
 console.log('3. 2 isGreaterThan 1: ' + isGreaterThan(2, 1));
 console.log('3. 1 isGreaterThan 2: ' + isGreaterThan(1, 2));
 
+/*
+3. 2 isGreaterThan 1: true
+3. 1 isGreaterThan 2: false
+*/
 
 /*
  * #4
@@ -106,7 +120,10 @@ function mustBeTrue(boo){
 console.log('4. 2>1 mustBeTrue: ' + mustBeTrue(2>1));
 console.log('4. 1>2 mustBeTrue: ' + mustBeTrue(1>2));
 
-
+/*
+4. 2>1 mustBeTrue: true
+4. 1>2 mustBeTrue: false
+*/
 
 /*
  * #5
@@ -131,6 +148,11 @@ console.log('5. dog is a 3 letter word: ' + bigBird('dog'));
 console.log('5. fetch is a 3 letter word: ' + bigBird('fetch'));
 
 /*
+5. dog is a 3 letter word: Word to Big Bird!
+5. fetch is a 3 letter word: false
+*/
+
+/*
  * #6
  * Function - isEqual
  * Create a function named `isEqual` which takes two parameters: `first` and `second`.
@@ -153,6 +175,10 @@ function isEqual(first, second){
 console.log("6. isEqual: " + isEqual("dog", "cat"));
 console.log("6. isEqual: " + isEqual('dog', 'dog'));
 
+/*
+6. isEqual: I don't know who you are anymore.
+6. isEqual: You look mahvelous
+*/
 
 /*
  * #7
@@ -177,6 +203,10 @@ function notEqual(first, second){
 console.log("7. notEqual: " + notEqual('dog', 'dog'));
 console.log("7. notEqual: " + notEqual('dog', 'god'));
 
+/*
+7. notEqual: Opposites do attract
+7. notEqual: Cause it's like you're my mirror.
+*/
 
 /*
  * #8
@@ -199,6 +229,11 @@ function spareChange(money){
 }
 console.log('8. 101 spareChange: ' + spareChange(101));
 console.log('8. 99 spareChange: ' + spareChange(99));
+
+/*
+8. 101 spareChange: true
+8. 99 spareChange: false
+*/
 
 /*
  * #9
@@ -226,6 +261,11 @@ console.log('9. dirty30: ' + dirty30(10, 11, 12));
 console.log('9. dirty30: ' + dirty30(7, 8, 9));
 
 /*
+9. dirty30: true
+9. dirty30: false
+*/
+
+/*
  * #10
  * Function - evenStevens
  * Create a function named `evenStevens` which takes a parameter: `num`.
@@ -247,6 +287,10 @@ function evenStevens(num){
 console.log('10. evenStevens: ' + evenStevens(10));
 console.log('10. evenStevens: ' + evenStevens(9));
 
+/*
+10. evenStevens: true
+10. evenStevens: false
+*/
 
 /*
  * #11
@@ -272,6 +316,11 @@ console.log('11. daClub: ' + daClub(21, 22));
 console.log('11. daClub: ' + daClub(18, 22));
 
 /*
+11. daClub: Welcome to the Legends Lounge.
+11. daClub: Chuck E Cheese is across the street.
+*/
+
+/*
  * #12
  * Function - graduation
  * Create a function named `graduation` which takes two parameters: `credits` and `thesis`.
@@ -294,6 +343,10 @@ function graduation(credits, thesis){
 console.log('12. graduation: ' + graduation(121, false));
 console.log('12. graduation: ' + graduation(119, false));
 
+/*
+12. graduation: Congratulations on a job well done.
+12. graduation: See you in summer school.
+*/
 
 /*
  * #13
@@ -316,6 +369,11 @@ function moneyTrain(speed){
 }
 console.log('13. moneyTrain: ' + moneyTrain(49));
 console.log('13. moneyTrain: ' + moneyTrain(51));
+
+/*
+13. moneyTrain: You are riding Honolulu's Rail
+13. moneyTrain: You are fiding an Amtrak.
+*/
 
 /*
  * #14
@@ -362,6 +420,22 @@ buyDoughnut();
 console.log(budget);
 console.log(doughnutBought);
 
+/*
+
+14:
+buy doughnut
+15
+1
+buy doughnut
+9
+2
+buy doughnut
+3
+3
+you are broke
+3
+3
+*/
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
@@ -399,6 +473,11 @@ function dailySpecials(special){
 console.log(dailySpecials("Tuesday"));
 
 /*
+Final Boss:
+Tuesday - Beef Curry
+*/
+
+/*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
 
 The for loop is made up for 3 parts:
@@ -416,6 +495,14 @@ for (var i = 0; i<toyotaModels.length; i++){
    console.log("Toyota " + toyotaModels[i]);
 }
 
+/*
+Sample:
+Toyota Corolla
+Toyota Prius
+Toyota 4 Runner
+Toyota Camry
+Toyota Land Cruiser
+*/
 
 /* 
  * #15
@@ -435,6 +522,14 @@ for (var i=0; i<players.length; i++){
 	console.log(players[i]);
 }
 
+/*
+15.
+Player: 1
+Player: 2
+Player: 3
+Player: 4
+Player: 5
+*/
 
 /* 
  * #16
@@ -451,6 +546,26 @@ for (var i=0; i<myFavFoods.length; i++){
 }
 console.log(myFavFoods);
 console.log(myFavFoods + '');
+
+/*
+16.
+lemon bar
+carrot cake
+nachos
+bacon cheeseburger
+ramen
+sweet potato fries
+chimichanga
+[ 'lemon bar',
+  'carrot cake',
+  'nachos',
+  'bacon cheeseburger',
+  'ramen',
+  'sweet potato fries',
+  'chimichanga' ]
+lemon bar,carrot cake,nachos,bacon cheeseburger,ramen,sweet potato fries,chimich
+anga
+*/
 
 /*
  * #17
@@ -481,6 +596,10 @@ function sumItUp(arr){
 }
 sumItUp(numArray);
 console.log('17. sumItUp: ' + total);
+
+/*
+17. sumItUp: 15
+*/
 
 /*
  * #18
@@ -515,6 +634,13 @@ function allStars(ballers){
 allStars(players);
 console.log(east);
 console.log(west);
+
+/*
+18:
+[ 'Yao Ming', ' Jesus Shuttlesworth', 'Sidney Deane' ]
+[ 'BrookLin', 'Manute Bol', 'World B Free' ]
+*/
+
 /*
  * #19
  * Function - subways
@@ -542,6 +668,17 @@ function subways(special){
 }
 subways(subOftheDay);
 //console.log(subways(subOftheDay));creates undefined
+
+/*
+19: subways special:
+Teriyaki Chicken
+Classic Tuna
+Turkey
+Classic Tuna
+Black Forest Ham
+Classic Tuna
+Veggie
+*/
 
 /*
 Final Boss
@@ -572,4 +709,6 @@ function removeLetter(str){
 }  
 removeLetter(phrase);
 
+//20:
+//n, ,p,p,l,e, , ,d,y, ,k,e,e,p,s, ,l,i,c,e, ,f,e,e,l,i,n,g, ,w,e,s,o,m,e,!
 
