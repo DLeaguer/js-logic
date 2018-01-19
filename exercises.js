@@ -574,8 +574,21 @@ console.log('West - ' + west);
  * Console.log your results.
 */ 
 
+console.log('');
+console.log('	19. subways: ');
+
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+function subways(special){
+	for (var i = 0; i < special.length; i++){
+		if (i % 2 === 1){
+			special.splice(i, 1, 'Classic Tuna');
+			// console.log(special[i]);
+		}
+	}
+			console.log(subOftheDay);
+}
+subways(subOftheDay);
 
 /*
 Final Boss
@@ -591,7 +604,23 @@ Final Boss
 
 var phrase = "An apple a day keeps Alice feeling awesome!";
  
-  
+console.log('');  
+console.log('	20. removeLetter: ');
+
+function removeLetter(str){
+	var letter = phrase.split('');
+	// console.log(letter);
+	var newPhrase = [];
+	for (var i = 0; i < letter.length - 1; i++){
+		if (letter[i] !== 'A' && letter[i] !== 'a'){
+			newPhrase.push(letter[i]);
+			// console.log(letter[i]);
+		}
+	}
+			newPhrase = newPhrase + letter[i];
+			console.log(newPhrase);
+}
+removeLetter(phrase);
   
 
 
