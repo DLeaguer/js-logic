@@ -29,6 +29,19 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
 
+console.log('');
+console.log('	1. canVote: ');
+
+function canVote(age){
+	if (age >= 18){
+		return true;
+	}else{
+		return false;
+	}
+}
+canVote(0);
+console.log(canVote(19));
+console.log(canVote(17));
 
 /*
  * #2
@@ -42,6 +55,18 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+console.log('');
+console.log('	2. login: ');
+
+function login(password){
+	if (password === 'test1234'){
+		return 'Login Success';
+	}else{
+		return 'Wrong password';
+	}
+}
+console.log(login('test1234'));
+console.log(login('test124'));
 
 /*
  * #3
@@ -56,7 +81,18 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+console.log('');
+console.log('	3. isGreaterThan: ');
 
+function isGreaterThan(first, second){
+	if (first > second){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log(isGreaterThan(3, 2));
+console.log(isGreaterThan(2, 3));
 
 /*
  * #4
@@ -70,6 +106,18 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+console.log('');
+console.log('	4. mustBeTrue: ');
+
+function mustBeTrue(boo){
+	if (boo === true){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log(mustBeTrue(3>2));
+console.log(mustBeTrue(2>3));
 
 
 /*
@@ -84,6 +132,18 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+console.log('');
+console.log('	5. bigBird: ');
+
+function bigBird(word){
+	if (word.length % 3 === 0){
+		return 'Word to Big Bird!';
+	}else{
+		return 'Not a three letter word.';
+	}
+}
+console.log(bigBird('dog'));
+console.log(bigBird('four'));
 
 
 /*
@@ -99,6 +159,20 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+console.log('');
+console.log('	6. isEqual: ');
+
+function isEqual(first, second){
+	if (first === second){
+		return 'You look mahvelous!';
+	}else{
+		return "I don't know who you are anymore.";
+	}
+}
+console.log(isEqual('cat', 'cat'));
+console.log(isEqual('cat', 'dog'));
+
+
 
 /*
  * #7
@@ -113,6 +187,18 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+console.log('');
+console.log('	7. notEqual: ');
+
+function notEqual(first, second){
+	if (first !== second){
+		return 'Opposites do attract.';
+	}else{
+		return "Cause it's like you're my mirror.";
+	}
+}
+console.log(notEqual('cat', 'dog'));
+console.log(notEqual('cat', 'cat'));
 
 /*
  * #8
@@ -126,7 +212,18 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */ 
 
+console.log('');
+console.log('	8. spareChange: ');
 
+function spareChange(money){
+	if (money > 100){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log(spareChange(101));
+console.log(spareChange(100));
 
 /*
  * #9
@@ -142,7 +239,19 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */ 
 
+console.log('');
+console.log('	9. dirty30: ');
 
+function dirty30(one, two, three){
+	var sum = one + two + three;
+	if (sum > 30){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log(dirty30(10, 11, 12));
+console.log(dirty30(8, 9, 10));
 
 /*
  * #10
@@ -156,8 +265,18 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */ 
 
+console.log('');
+console.log('	10. evenStevens:  ');
 
-
+function evenStevens(num){
+	if (num % 2 === 0){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log(evenStevens(22));
+console.log(evenStevens(21));
 
 /*
  * #11
@@ -172,6 +291,18 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */ 
 
+console.log('');
+console.log('	11. daClub: ');
+
+function daClub(cover, age){
+	if (cover >= 21 && age >= 21){
+		return 'Welcome to the Legends Lounge.';
+	}else{
+		return 'Chuck E Cheese is across the street.';
+	}
+}
+console.log(daClub(21, 21));
+console.log(daClub(21, 20));
 
 /*
  * #12
@@ -186,6 +317,18 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */ 
 
+console.log('');
+console.log('	12. graduation: ');
+
+function graduation(credits, thesis){
+	if (credits >= 120 || thesis === true){
+		return 'Congratulations on a job well done.';
+	}else{
+		return 'See you in summer school.';
+	}
+}
+console.log(graduation(119, true));
+console.log(graduation(119, false));
 
 
 /*
@@ -200,6 +343,21 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */ 
 
+console.log('');
+console.log('	13. moneyTrain: ');
+
+function moneyTrain(speed){
+	if (speed < 50){
+		return "You are riding Honolulu's Rail.";
+	}else if (speed < 100){
+		return 'You are riding an Amtrak.';
+	}else{
+		return "Now you ballin' in the Shinkansen!";
+	}
+}
+console.log(moneyTrain(49));
+console.log(moneyTrain(99));
+console.log(moneyTrain(100));
 
 /*
  * #14
@@ -215,11 +373,78 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log budget and doughnutBought again.
 */ 
 
+console.log('');
+console.log('	14. buyDoughnut: ');
+
+var budget = 21;
+var doughnutPrice = 5;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+	if (budget >= doughnutPrice){
+		budget -= doughnutPrice;
+		doughnutBought++;
+		return 'You can buy one more.';
+	}else{
+		return "You don't have enough money."
+	}
+}
+console.log(buyDoughnut());
+console.log('budget = ' + budget);
+console.log('doughnutBought = ' + doughnutBought);
+console.log('');
+
+console.log(buyDoughnut());
+console.log('budget = ' + budget);
+console.log('doughnutBought = ' + doughnutBought);
+console.log('');
+
+console.log(buyDoughnut());
+console.log('budget = ' + budget);
+console.log('doughnutBought = ' + doughnutBought);
+console.log('');
+
+console.log(buyDoughnut());
+console.log('budget = ' + budget);
+console.log('doughnutBought = ' + doughnutBought);
+console.log('');
+
+console.log(buyDoughnut());
+console.log('budget = ' + budget);
+console.log('doughnutBought = ' + doughnutBought);
+console.log('');
+
+console.log(buyDoughnut());
+console.log('budget = ' + budget);
+console.log('doughnutBought = ' + doughnutBought);
+console.log('');
+
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
 
+console.log('');
+console.log('	14a. dailySpecials: ');
 
+function dailySpecials(special){
+	switch(special){
+		case 'Sunday': return 'Sunday is Spaghetti & Garlic Bread';
+		case 'Monday': return 'Monday is Beef Stew';
+		case 'Tuesday': return 'Tuesday is Beef Curry';
+		case 'Wednesday': return 'Wednesday is Teriyaki Steak';
+		case 'Thursday': return 'Thursday is Loco Moco';
+		case 'Friday': return 'Friday is Hawaiian';
+		case 'Saturday': return 'Saturday is Mahi Mahi';
+		default: return "Look for the day's special";
+	}
+}
+console.log('The Special for ' + dailySpecials('Sunday'));
+console.log('The Special for ' + dailySpecials('Monday'));
+console.log('The Special for ' + dailySpecials('Tuesday'));
+console.log('The Special for ' + dailySpecials('Wednesday'));
+console.log('The Special for ' + dailySpecials('Thursday'));
+console.log('The Special for ' + dailySpecials('Friday'));
+console.log('The Special for ' + dailySpecials('Saturday'));
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
@@ -230,6 +455,9 @@ The for loop is made up for 3 parts:
 2) Condition (i.e. i<arr.length;)
 3) Update (i.e. i++)
 */
+
+console.log('');
+console.log('	14b. Sample for loop: ');
 
 var toyotaModels = ["Corolla", "Prius", "4 Runner", "Camry", "Land Cruiser"];
 
@@ -248,6 +476,12 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+console.log('');
+console.log('	15. for loop: ');
+
+for (var i = 1; i <= 5; i++){
+	console.log('Player: ' + i);
+}
 
 /* 
  * #16
@@ -255,6 +489,12 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+console.log('');
+console.log('	16. for loop: ');
+
+for (var i = 0; i < myFavFoods.length; i++){
+	console.log(myFavFoods[i]);
+}
 
 /*
  * #17
@@ -271,7 +511,20 @@ for (var i = 0; i<toyotaModels.length; i++){
  * Console.log your result.
 */
 
+console.log('');
+console.log('	17. sumItUp: ');
 
+var numArray = [1, 2, 3, 4, 5];
+var total = 0;
+
+function sumItUp(arr){
+	for (var i = 0; i < arr.length; i++){
+		total = total + arr[i];
+		// console.log(total);
+	}
+}
+sumItUp(numArray);
+console.log('total = ' + total);
 
 /*
  * #18
@@ -286,6 +539,29 @@ for (var i = 0; i<toyotaModels.length; i++){
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+
+console.log('');
+console.log('	18. allStars: ');
+
+var east = [];
+var west = [];
+
+function allStars(ballers){
+	for (var i = 0; i < ballers.length; i++){
+		if (i % 2 === 0){
+			east = east + ballers[i] + ', ';
+			// return 'East - ' + east;
+		}else if (i % 2 === 1){
+			west = west + ballers[i] + ', ';
+			// return 'West - ' + west;
+		}
+	}
+}
+allStars(players);
+console.log('East - ' + east);
+console.log('West - ' + west);
+
+
 /*
  * #19
  * Function - subways
