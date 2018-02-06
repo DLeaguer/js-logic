@@ -451,11 +451,12 @@ function subways(special){
 		if (i % 2 === 1){
 			special.splice(i, 1, 'Classic Tuna');
 		}
-		// return special;
 	}
-		console.log(special);
+		return special;
+		// console.log(special);
 }
 subways(subOftheDay);
+console.log(subOftheDay);
 /*
 Final Boss
  * #20
