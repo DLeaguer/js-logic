@@ -469,6 +469,7 @@ Final Boss
  *  The function will loop through the string value and put all the letters into an array, except for the letter "A" and "a". We don't want no stinking "A" or "a" in our array. Test your function with the `phrase` below!
 */
 var phrase = "An apple a day keeps Alice feeling awesome!";
+var phrase2 = '';
 function removeLetter(str){
 	var word = str.split(' ');
 	// console.log(word);
@@ -478,8 +479,12 @@ function removeLetter(str){
 		if (letter[i] === 'A' || letter[i] === 'a'){
 			letter.splice(i, 1);
 		}
+		// letter.join('');
 	}
-		console.log(letter);
-		return str;
+		// console.log(letter);
+		phrase2 += letter;
+		// return word.join(' ');
 }
+// console.log(removeLetter(phrase));
 removeLetter(phrase);
+console.log(phrase2);
